@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.header-wrap {
+    background-color: #F5F5F5;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-menu {
+    gap: 70px;
+}
+
+.header-logo {
+    align-items: center;
+}
+
+/******************************************************************************* header ****************************************************************************************************/
+
+.header-wrap {
+    display: flex;
+    background-color: #F5F5F5;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    padding: 20px 0;
+}
+
+.header-menu {
+    display: flex;
+    gap: 70px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    color: #60A2B8;
+}
+
+.header-menu a {
+    color: #60A2B8;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.header-social {
+    display: flex;
+    gap: 25px;
+}
+
+/******************************************************************************* sec1 ****************************************************************************************************/
+.sec1 {
+    padding: 100px 0;
+    background: linear-gradient(180deg, #dfe9ef 0%, #6fa0af 100%);
+}
+
+.sec1-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec1-text {
+    max-width: 520px;
+}
+
+.sec1-text h1 {
+    font-family: "Inter", serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-left: 90px
+}
+
+.sec1-desc {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #404040;
+    margin-bottom: 30px;
+    margin-left: 90px;
+}
+
+.sec1-btn {
+    margin-left: 90px;
+    background: #2f5d66;
+    color: #F5F5F5;
+    border: none;
+    padding: 16px 34px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.sec1-img {
+    position: relative;
+}
