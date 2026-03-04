@@ -11,16 +11,17 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-
 }
 
 /* ================= CONTAINER ================= */
 
 .container {
-    max-width: 100%;
     width: 100%;
-    margin: 0, auto;
-
+    max-width: 1780px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 90px;
+    padding-right: 90px;
 }
 
 /* ================= HEADER ================= */
@@ -30,13 +31,11 @@ header {
     background: #ffffff;
 }
 
-
 .header-wrap {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 90px;
-    padding: 0 90px;
-    gap: 182px;
 }
 
 .header-logo {
@@ -73,7 +72,6 @@ header {
 .header-social {
     display: flex;
     gap: 22px;
-    margin-left: 260px;
 }
 
 .header-social img {
@@ -86,18 +84,14 @@ header {
     height: 32px;
 }
 
-
-
 /* ================= sec1 ================= */
 
-
 .sec1 {
-
     display: flex;
     align-items: center;
     background: linear-gradient(to top, #60A2B8, #ffffff);
     padding-bottom: 108px;
-    gap: 40px
+    gap: 40px;
 }
 
 .sec1-wrap {
@@ -105,9 +99,8 @@ header {
     align-items: center;
     justify-content: flex-start;
     gap: 80px;
+    width: 100%;
 }
-
-
 
 .sec1-text h1 {
     font-size: 48px;
@@ -117,24 +110,19 @@ header {
     font-family: "Inter", sans-serif;
 }
 
-
 .sec1-text h1 .line {
     display: block;
-    white-space: nowrap;
     font-family: "Inter", sans-serif;
 }
 
-
 .sec1-desc {
     max-width: 540px;
-    max-height: 122px;
     font-size: 18px;
     color: #404040;
     margin-bottom: 40px;
     margin-top: 40px;
     font-family: "Inter", sans-serif;
 }
-
 
 .sec1-btn {
     background: #195360;
@@ -148,21 +136,20 @@ header {
 }
 
 .sec1-text {
-    width: 720px;
-    height: 391px;
     margin-left: 90px;
-}
-
-.plate {
-    
-    margin-top: 162px;
-    width: 889px;
-    display: block;
-    margin-left: 100px;
 }
 
 .sec1-img {
     position: relative;
+    flex: 1;
+    min-width: 0;
+}
+
+.plate {
+    margin-top: 162px;
+    width: 100%;        
+    max-width: 889px;
+    display: block;
 }
 
 .plate-wrapper {
@@ -170,11 +157,7 @@ header {
     display: inline-block;
 }
 
-
-
 .lemon {
-    margin-left: 50px;
-    margin-top: 477px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -227,6 +210,7 @@ header {
     color: #F5F5F5;
     font-family: "Inter", sans-serif;
 }
+
 .sec2-wrap {
     max-width: 100%;
     width: 100%;
@@ -242,8 +226,8 @@ header {
 }
 
 .superoffer-title {
-    margin-left: 600px;
     display: flex;
+    justify-content: center;  
     color: white;
     text-align: center;
     margin-bottom: 100px;
@@ -256,6 +240,8 @@ header {
 
 .offer-item {
     position: relative;
+    flex: 1;
+    min-width: 0;
 }
 
 .offer-item img {
@@ -263,21 +249,24 @@ header {
     display: block;
 }
 
-.offer-item h2 {
-    bottom: 20px;
-    left: 0;
-    right: 0;
+.offer-item h3 {
     text-align: center;
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 0;
+    right: 0;
+    width: 100%;
     color: white;
 }
 
 /* ================= sec4 ================= */
 
-.sec4{
+.sec4 {
     padding-bottom: 102px;
+}
+
+.reasons {
+    position: relative;
 }
 
 .reasons-title {
@@ -300,7 +289,8 @@ header {
     margin-top: 40px;
     font-family: "Inter", sans-serif;
 }
-.reasons-item h2{
+
+.reasons-item h3 {
     color: #7B3838;
 }
 
@@ -311,22 +301,28 @@ header {
     gap: 8px;
     font-family: "Inter", sans-serif;
 }
+
 .img-sec4 {
-    margin-left: 810px;
-    margin-top: -500px;
+    position: absolute;
+    right: 0;           
+    top: 0;
+    width: 45%;
+    max-width: 700px;
 }
 
 /* ================= sec5 ================= */
-.sec5{
+.sec5 {
     background-color: #195360;
     padding-top: 75px;
     font-family: "Inter", sans-serif;
 }
+
 .information {
     font-size: 24px;
     display: flex;
-    gap: 40px;
-    padding: 60px 90px;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 60px 40px;
     align-items: center;
 }
 
@@ -334,17 +330,18 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
 }
 
 .information-img {
-    width: 300px;
-    height: 302px;
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
     object-fit: contain;
+    filter: brightness(0);
 }
 
-
-
-.information-item h1 {
+.information-item h2 {
     color: #60A2B8;
     margin-top: 20px;
 }
@@ -353,42 +350,42 @@ header {
     margin: 36px;
     color: white;
     font-weight: 400;
+    white-space: nowrap;
 }
-
-.information {
-    display: flex;
-    padding: 60px 90px;
-    align-items: center;
-    justify-content: space-around; 
-}
-
 
 /* ================= sec6 ================= */
-.sec6   {
+.sec6 {
     font-family: "Inter", sans-serif;
 }
-.dream-img{
-    margin-top: -100px
+
+.dream-img {
+    margin-top: -100px;
+    max-width: 100%;
+    height: auto;
 }
 
-.dream-text{
-    gap : 16px;
+.dream-text {
+    gap: 16px;
     margin-top: 146px;
     margin-left: 820px;
     font-size: 18px;
 }
-.dream-text h1{
+
+.dream-text h1 {
     color: #7B3838;
     font-size: 54px;
     margin-bottom: 40px;
 }
+
 .dream-items-wrap {
     display: flex;
     flex-wrap: wrap;
-    width: 900px;
+    width: 50%;
     margin-top: -550px;
-    margin-left: 870px;
+    margin-left: auto;
+    padding-right: 90px;
 }
+
 .dream-items {
     width: 150px;
     text-align: center;
@@ -404,45 +401,53 @@ header {
     color: #7B3838;
 }
 
+/* ================= FOOTER ================= */
 
 .footer {
     color: #404040;
     padding-top: 180px;
     font-family: "Inter", sans-serif;
-  }
-  
-  .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .footer-title {
+}
+
+.footer-title {
     font-size: 36px;
     margin-bottom: 40px;
-  }
-  
-  .footer-contacts {
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
-  }
-  
-  
-  .icon {
-    margin-bottom: 14px;
-  }
+    justify-content: center;
+}
 
-  
-  .contact-title {
+.footer-contacts {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    flex: 1;
+    min-width: 220px;
+}
+
+.icon {
+    margin-bottom: 14px;
+}
+
+.contact-title {
     font-size: 24px;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 8px;
-  }
-  
-  .contact-text {
+}
+
+.contact-text {
     margin-top: 15px;
     font-size: 14px;
     line-height: 1.6;
-  }
+}
+
+.contact-text a {
+    text-decoration: none;
+    color: #404040;
+}
