@@ -13,6 +13,10 @@ body {
     min-height: 100vh;
 }
 
+address{
+    font-style: normal;
+}
+
 /* ================= CONTAINER ================= */
 
 .container {
@@ -90,8 +94,11 @@ header {
     display: flex;
     align-items: center;
     background: linear-gradient(to top, #60A2B8, #ffffff);
-    padding-bottom: 108px;
     gap: 40px;
+}
+.sec1__container {
+    padding-bottom: 120px;
+    height: calc(100vh - 90px);
 }
 
 .sec1-wrap {
@@ -100,6 +107,7 @@ header {
     justify-content: flex-start;
     gap: 80px;
     width: 100%;
+    height: 100%;
 }
 
 .sec1-text h1 {
@@ -110,10 +118,7 @@ header {
     font-family: "Inter", sans-serif;
 }
 
-.sec1-text h1 .line {
-    display: block;
-    font-family: "Inter", sans-serif;
-}
+
 
 .sec1-desc {
     max-width: 540px;
@@ -122,6 +127,7 @@ header {
     margin-bottom: 40px;
     margin-top: 40px;
     font-family: "Inter", sans-serif;
+    line-height: 160%;
 }
 
 .sec1-btn {
@@ -135,9 +141,7 @@ header {
     font-family: "Inter", sans-serif;
 }
 
-.sec1-text {
-    margin-left: 90px;
-}
+
 
 .sec1-img {
     position: relative;
@@ -146,10 +150,10 @@ header {
 }
 
 .plate {
-    margin-top: 162px;
     width: 100%;        
     max-width: 889px;
     display: block;
+    margin-left: auto;
 }
 
 .plate-wrapper {
@@ -168,15 +172,15 @@ header {
 .sec2 {
     background: white;
     margin-top: 120px;
-    padding-left: 170px;
-    padding-right: 90px;
 }
 
 .menu-row {
     display: flex;
     gap: 30px;
 }
-
+.menu-title{
+    color: #404040;
+}
 .menu {
     flex-direction: column;
     font-family: "Inter", sans-serif;
@@ -194,7 +198,7 @@ header {
     margin-bottom: 120px;
 }
 
-.menu-1 h1 {
+.menu-1 h2 {
     color: #7B3838;
     margin-bottom: 30px;
 }
@@ -220,7 +224,7 @@ header {
 /* ================= sec3 ================= */
 .sec3 {
     background-color: #195360;
-    padding: 60px 150px;
+    padding: 60px 0px;
     padding-bottom: 130px;
     font-family: "Inter", sans-serif;
 }
@@ -274,16 +278,13 @@ header {
     display: flex;
     color: #7B3838;
     margin-top: 123px;
-    margin-left: 90px;
 }
 
 .reason-desc {
-    margin-left: 90px;
     margin-top: 40px;
 }
 
 .reasons-item {
-    margin-left: 90px;
     display: flex;
     gap: 32px;
     margin-top: 40px;
@@ -406,6 +407,7 @@ header {
 .footer {
     color: #404040;
     padding-top: 180px;
+    padding-bottom: 50px;
     font-family: "Inter", sans-serif;
 }
 
@@ -418,16 +420,17 @@ header {
 
 .footer-contacts {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 40px;
-    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .contact-item {
-    flex: 1;
-    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .icon {
